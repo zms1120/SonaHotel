@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="PaymentMapper">
+	
+	<!-- 예약 정보 -->
+	<select id="getReservationInfo" resultType="com.sona.biz.dto.PaymentVO">
+		SELECT amount, name, phone_number, email FROM reservation WHERE rseq = #{rseq}
+	</select>
+	
+  	<!-- 결제 정보 삽입 -->
+  	<insert id="insertPayment" parameterType="com.sona.biz.dto.PaymentVO">
+  		INSERT INTO payment (payment_date, payment_method) VALUES (#{payment_date}, #{payment_method})
+  	</insert>
+  	
+</mapper>
