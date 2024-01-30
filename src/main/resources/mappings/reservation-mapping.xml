@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="ReservationMapper">
+
+	<!-- 예약하기 -->
+	<insert id="reservation">
+		INSERT INTO reservation(id, phone_number, birthday, adult, children, pet, extra_bed, check_in, check_out)
+		VALUES (reservation_seq.nextval, #{id}, #{phone_number},#{birthday},#{adult},#{children},#{pet},#{extra_bed},#{check_in},#{check_out})
+	</insert>
+	
+	<!-- 예약 목록 보기 -->
+	<select id="listReservation" resultType="reservation">
+		SELECT * FROM reservation WHERE id=#{id}
+	</select>
+	
+	<!-- 예약 취소 -->
+	<delete id="deleteReservation">
+		DELETE reservation WHERE id=#{id}		
+	</delete>	
+	
+	<!-- 예약 수정 갱신 -->
+	<update id="updateReservation">
+		
+	</update>
+  
+</mapper>
