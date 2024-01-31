@@ -3,12 +3,17 @@
 <configuration>
 
 	<typeAliases>
-		<typeAlias type="com.sona.biz.dto.PaymentVO" alias="payment"  />
+<typeAlias type="com.sona.biz.dto.PaymentVO" alias="payment"  />
+<typeAlias type="com.sona.biz.dto.ReservationVO" alias="reservation"  />
+<typeAlias type="com.sona.biz.dto.RoomsVO" alias="rooms"  />
+<typeAlias type="com.sona.biz.dto.PackageVO" alias="package"  />
 	</typeAliases>
 
 	<!-- SQL 매핑파일 등록 -->
 	<mappers>
-		<mapper resource="mappings/payment-mapping.xml" />
+		<mapper resource="mappings/reservation-mapping.xml" />
+		<mapper resource="mappings/rooms-mapping.xml" />
+		<mapper resource="mappings/package-mapping.xml" />
+    <mapper resource="mappings/payment-mapping.xml" />
 	</mappers>
-
 </configuration>
