@@ -30,6 +30,7 @@
 <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
 <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="stylesheet" href="css/reservation-detail.css" type="text/css">
 </head>
 
 <body>
@@ -61,7 +62,7 @@
 					</ul>
 				</div>
 			</div>
-			<a href="#" class="bk-btn">Booking Now</a>
+			<a href="reservation_form" class="bk-btn">Booking Now</a>
 		</div>
 		<nav class="mainmenu mobile-menu">
 			<ul>
