@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.rd_container{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.rd_inner{
+    max-width: 1170px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.room_info{
+    width: 100%;
+    margin-top: 0;
+}
+
+.img_area{
+    position: relative;
+    display: block;
+    float: left;
+    width: 520px;
+    height: 260px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.img_area img{
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 0;
+    vertical-align: top;
+}
+
+.txt_area{
+    display: table;
+    height: 260px;
+    width: calc(100% - 570px);
+    padding: 70px 0 0;
+    margin-left: 0;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.txt_area li{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.txt_area li:not(:first-child){
+    margin-top: 14px;
+}
+
+.type_bold{
+    display: table-cell;
+    width: 24%;
+    min-width: 80px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.info_text{
+    display: table-cell;
+    width: 76%;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.payment_info{
+    display: block;
+}
+
+.payment_detail_content{
+    display: table;
+    width: 100%;
+    padding: 36px 0;
+    margin-top: 0;
+}
+
+.notice{
+    display: table-cell;
+    width: 520px;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.notice > span{
+    display: block;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.notice > .type_bold{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+    display: block;
+    line-height: 1.6;
+}
+
+.payment_detail_list{
+    display: table-cell;
+    padding: 0 93px 0 56px;
+    border-top: 0;
+    border-color: #dcdcdc;
+}
+
+.payment_detail_list li{
+    width: 100%;
+    font-size: 0;
+    padding: 0;
+}
+
+.payment_detail_list li:not(:first-child){
+    margin-top: 10px;
+}
+
+.payment_detail_list li p.type_bold{
+    width: 70%;
+    display: inline-block;
+}
+
+.payment_detail_list li p.type_bold span{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.type_bold_gold{
+    color: #a2865b;
+}
+
+.info_price{
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+}
+
+.info_price span{
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.won{
+    margin-left: 5px;
+}
+
+.amount_area{
+    border-top: 1px solid #dcdcdc;
+    display: block;
+    width: 100%;
+    height: 90px;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #b5b5b5;
+}
+
+.type_bold_amount{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.amount{
+    right: 93px;
+    position: absolute;
+}
+
+.amount_won{
+    margin-left: 8px;
+}
+
+.reservation_user_info_area{
+    margin-top: 80px;
+}
+
+.user_info{
+    padding-top: 0;
+    border-bottom: 0;
+}
+
+.subject_area{
+    padding-left: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content_area{
+    display: table;
+    width: 100%;
+    margin-top: 33px;
+    padding: 48px 60px 48px 105px;
+    table-layout: fixed;
+    background-color: #f9f9f9;
+}
+
+.user_info{
+    position: relative;
+    display: table-cell;
+    width: 38%;
+    padding: 0;
+    vertical-align: top;
+}
+
+.user_info:first-child>ul::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #c9c9c9;
+}
+
+.user_info li{
+    display: table;
+    table-layout: fixed;
+}
+
+.user_info li .type_bold{
+    display: table-cell;
+    width: 120px;
+    font-size: 16px;
+}
+
+.user_info:last-child{
+    width: 62%;
+    padding-left: 48px;
+}

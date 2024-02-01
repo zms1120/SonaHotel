@@ -558,12 +558,19 @@ ul, ol {
 .booking-form form .select-option {
 	margin-bottom: 15px;
 }
+
+
 .booking-form form .select-option label {
 	font-size: 14px;
 	color: #707079;
 	display: block;
 	margin-bottom: 10px;
 }
+
+.booking-form form .select-option .petsub{
+	display:inline;
+}
+
 .booking-form form .select-option .nice-select {
 	border-radius: 2px;
 	border: 1px solid #ebebeb;
