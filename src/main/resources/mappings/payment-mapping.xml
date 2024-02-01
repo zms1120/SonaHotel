@@ -4,7 +4,7 @@
 	
 	<!-- 예약 정보 -->
 	<select id="getReservationInfo" resultType="com.sona.biz.dto.PaymentVO">
-		SELECT amount, name, phone_number, email FROM reservation WHERE rseq = #{rseq}
+    	SELECT rseq, amount, name, phone_number, email FROM reservation WHERE rseq = #{rseq}
 	</select>
 	
   	<!-- 결제 정보 삽입 -->

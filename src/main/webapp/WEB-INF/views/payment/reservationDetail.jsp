@@ -1,3 +1,4 @@
+
  <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ include file="../header.jsp" %>    
@@ -101,7 +102,27 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>
 
-<%@ include file="../footer.jsp" %>   
+
+<%@ include file="../footer.jsp"%>
+		<script>
+			$(function() {
+				$('#apibtn').click(function() {
+					$.ajax({
+						url : '/biz2/kakaopay',
+						dataType : 'json',
+						success : function(data) {
+							var box = data.next_redirect_pc_url;
+							window.open(box);
+						},
+						error : function(error) {
+							alert(error);
+						}
+					});
+				});
+			});
+		</script>
+		
